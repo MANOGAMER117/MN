@@ -1,0 +1,38 @@
+(function() {
+  var something = function(deps) {
+    var result = [];
+    for (var i = 0, len = deps.length; i < len; i++) {
+      result[i] = __m[deps[i]];
+    }
+    var otherthing = function(ids) {
+      var output = [];
+      for (var j = 0, len = ids.length; j < len; j++) {
+        output[j] = __m[ids[j]];
+      }
+      var anotherthing = function(criticality) {
+        var volume = [];
+        for (var k = 0, len = criticality.length; k < len; k++) {
+          volume[k] = __m[criticality[k]];
+        }
+        var thing = function(resources) {
+          var resource = [];
+          for (var l = 0, len = resources.length; l < len; l++) {
+            resource[l] = __m[resources[l]];
+          }   
+          var uid = function(repos) {
+            var repo = [];
+            for (var m = 0, len = repos.length; m < len; m++) {
+              repo[m] = __m[repos[l]];
+            }
+            return repo;
+          };
+          return resource;
+        };
+        return volume;
+      };
+      return output;
+    };
+    return result;
+  };
+}
+)
